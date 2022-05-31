@@ -2,7 +2,7 @@ package Leson10;
 
 class MyArraySizeException extends RuntimeException {
     MyArraySizeException(String msg) {
-        super("Ошибка размерности массива.\n" + " " + msg);
+        super("РћС€РёР±РєР° СЂР°Р·РјРµСЂРЅРѕСЃС‚Рё РјР°СЃСЃРёРІР°.\n" + " " + msg);
     }
 
 }

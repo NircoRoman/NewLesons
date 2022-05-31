@@ -1,6 +1,6 @@
 package Leson10;
     class MyArrayDataException extends RuntimeException {
         MyArrayDataException(String msg) {
-            super("Ошибка преобразования элемента массива в целое число.\n" + " " + msg);
+            super("РћС€РёР±РєР° РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР° РІ С†РµР»РѕРµ С‡РёСЃР»Рѕ.\n" + " " + msg);
     }
 }
