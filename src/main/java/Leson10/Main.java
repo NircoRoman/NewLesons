@@ -29,22 +29,22 @@ public class Main {
         };
 
         try {
-            System.out.println("Сумма элементов массива равна " + transformAndSum(stringArray0));
+            System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР° " + transformAndSum(stringArray0));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
         try {
-            System.out.println("Сумма элементов массива равна " + transformAndSum(stringArray1));
+            System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР° " + transformAndSum(stringArray1));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
         try {
-            System.out.println("Сумма элементов массива равна " + transformAndSum(stringArray2));
+            System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР° " + transformAndSum(stringArray2));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
         try {
-            System.out.println("Сумма элементов массива равна " + transformAndSum(stringArray3));
+            System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР° " + transformAndSum(stringArray3));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
@@ -54,14 +54,14 @@ public class Main {
         int arrDim = 4;
         int sum = 0;
 
-        // Проверяем, что у массива 4 основных измерения
+        // РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ Сѓ РјР°СЃСЃРёРІР° 4 РѕСЃРЅРѕРІРЅС‹С… РёР·РјРµСЂРµРЅРёСЏ
         if (in.length != 4) {
-            throw new MyArraySizeException(String.format("Размерность массива должна быть %dх%d.", arrDim, arrDim));
+            throw new MyArraySizeException(String.format("Р Р°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°СЃСЃРёРІР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ %dС…%d.", arrDim, arrDim));
         }
-        // Т.к. размерность вложенных массивов может быть не всегда одинакова, то проверяем, что в каждом из 4-х основных измерений находится массив ровно из 4 элементов
+        // Рў.Рє. СЂР°Р·РјРµСЂРЅРѕСЃС‚СЊ РІР»РѕР¶РµРЅРЅС‹С… РјР°СЃСЃРёРІРѕРІ РјРѕР¶РµС‚ Р±С‹С‚СЊ РЅРµ РІСЃРµРіРґР° РѕРґРёРЅР°РєРѕРІР°, С‚Рѕ РїСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РІ РєР°Р¶РґРѕРј РёР· 4-С… РѕСЃРЅРѕРІРЅС‹С… РёР·РјРµСЂРµРЅРёР№ РЅР°С…РѕРґРёС‚СЃСЏ РјР°СЃСЃРёРІ СЂРѕРІРЅРѕ РёР· 4 СЌР»РµРјРµРЅС‚РѕРІ
         for (int i = 0; i < in.length; i++) {
             if (in[i].length != 4) {
-                throw new MyArraySizeException(String.format("Размерность массива должна быть %dх%d.", arrDim, arrDim));
+                throw new MyArraySizeException(String.format("Р Р°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°СЃСЃРёРІР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ %dС…%d.", arrDim, arrDim));
             }
         }
 
@@ -71,7 +71,7 @@ public class Main {
                     sum += valueOf(in[i][j]);
                 } catch (NumberFormatException e) {
                     throw new MyArrayDataException(String.format
-                            ("В позиции [%d][%d] исходного массива находится не целое число %s.", i, j, in[i][j]));
+                            ("Р’ РїРѕР·РёС†РёРё [%d][%d] РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР°С…РѕРґРёС‚СЃСЏ РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ %s.", i, j, in[i][j]));
                 }
             }
         }
