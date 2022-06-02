@@ -44,7 +44,7 @@ public class Main {
             System.out.println(e);
         }
         try {
-            System.out.println("Сумма элементов массива равна " + transformAndSum(stringArray3));
+            System.out.println(" Сумма элементов массива равна " + transformAndSum(stringArray3));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
